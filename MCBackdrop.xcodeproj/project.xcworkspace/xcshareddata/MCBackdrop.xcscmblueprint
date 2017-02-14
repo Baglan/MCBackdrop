@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EF59B24AAAE8009104CA1B5FB425E3D770720D5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EF59B24AAAE8009104CA1B5FB425E3D770720D5C" : 9223372036854775807,
+    "54DF86B19E32C676258926614E0A9976C6BBE9F0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C132E683-E366-4103-8AE7-48FE274C44E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EF59B24AAAE8009104CA1B5FB425E3D770720D5C" : "MCBackdrop\/",
+    "54DF86B19E32C676258926614E0A9976C6BBE9F0" : "MCBackdrop\/MCViewport\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MCBackdrop",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MCBackdrop.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Baglan\/MCViewport",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54DF86B19E32C676258926614E0A9976C6BBE9F0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Baglan\/MCBackdrop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF59B24AAAE8009104CA1B5FB425E3D770720D5C"
+    }
+  ]
+}

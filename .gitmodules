@@ -1,0 +1,3 @@
+[submodule "MCViewport"]
+	path = MCViewport
+	url = https://github.com/Baglan/MCViewport

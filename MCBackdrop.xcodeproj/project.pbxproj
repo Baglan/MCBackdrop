@@ -12,6 +12,17 @@
 		863450C01E51685F00F242DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863450BE1E51685F00F242DA /* Main.storyboard */; };
 		863450C21E51685F00F242DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863450C11E51685F00F242DA /* Assets.xcassets */; };
 		863450C51E51685F00F242DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863450C31E51685F00F242DA /* LaunchScreen.storyboard */; };
+		863450D31E516A6700F242DA /* MCRecycler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450CD1E516A6700F242DA /* MCRecycler.swift */; };
+		863450D41E516A6700F242DA /* MCViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450CE1E516A6700F242DA /* MCViewport.swift */; };
+		863450D51E516A6700F242DA /* MCViewportItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450CF1E516A6700F242DA /* MCViewportItem.swift */; };
+		863450D61E516A6700F242DA /* MCViewportItem+Distances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450D01E516A6700F242DA /* MCViewportItem+Distances.swift */; };
+		863450D71E516A6700F242DA /* MCViewportItem+MovementConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450D11E516A6700F242DA /* MCViewportItem+MovementConstraints.swift */; };
+		863450D81E516A6700F242DA /* MCViewportWithScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450D21E516A6700F242DA /* MCViewportWithScrollView.swift */; };
+		863450DF1E516AA400F242DA /* MCBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450DA1E516AA400F242DA /* MCBackdrop.swift */; };
+		863450E01E516AA400F242DA /* ImageBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450DB1E516AA400F242DA /* ImageBackdrop.swift */; };
+		863450E11E516AA400F242DA /* RepeatingVideoBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450DC1E516AA400F242DA /* RepeatingVideoBackdrop.swift */; };
+		863450E21E516AA400F242DA /* TransitionImageBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450DD1E516AA400F242DA /* TransitionImageBackdrop.swift */; };
+		863450E31E516AA400F242DA /* VideoBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863450DE1E516AA400F242DA /* VideoBackdrop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		863450C11E51685F00F242DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		863450C41E51685F00F242DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		863450C61E51685F00F242DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863450CD1E516A6700F242DA /* MCRecycler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCRecycler.swift; path = MCViewport/Classes/MCRecycler.swift; sourceTree = "<group>"; };
+		863450CE1E516A6700F242DA /* MCViewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCViewport.swift; path = MCViewport/Classes/MCViewport.swift; sourceTree = "<group>"; };
+		863450CF1E516A6700F242DA /* MCViewportItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCViewportItem.swift; path = MCViewport/Classes/MCViewportItem.swift; sourceTree = "<group>"; };
+		863450D01E516A6700F242DA /* MCViewportItem+Distances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MCViewportItem+Distances.swift"; path = "MCViewport/Classes/MCViewportItem+Distances.swift"; sourceTree = "<group>"; };
+		863450D11E516A6700F242DA /* MCViewportItem+MovementConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MCViewportItem+MovementConstraints.swift"; path = "MCViewport/Classes/MCViewportItem+MovementConstraints.swift"; sourceTree = "<group>"; };
+		863450D21E516A6700F242DA /* MCViewportWithScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCViewportWithScrollView.swift; path = MCViewport/Classes/MCViewportWithScrollView.swift; sourceTree = "<group>"; };
+		863450DA1E516AA400F242DA /* MCBackdrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCBackdrop.swift; path = Classes/MCBackdrop.swift; sourceTree = "<group>"; };
+		863450DB1E516AA400F242DA /* ImageBackdrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageBackdrop.swift; path = Classes/ImageBackdrop.swift; sourceTree = "<group>"; };
+		863450DC1E516AA400F242DA /* RepeatingVideoBackdrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepeatingVideoBackdrop.swift; path = Classes/RepeatingVideoBackdrop.swift; sourceTree = "<group>"; };
+		863450DD1E516AA400F242DA /* TransitionImageBackdrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionImageBackdrop.swift; path = Classes/TransitionImageBackdrop.swift; sourceTree = "<group>"; };
+		863450DE1E516AA400F242DA /* VideoBackdrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoBackdrop.swift; path = Classes/VideoBackdrop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,8 @@
 		863450AE1E51685F00F242DA = {
 			isa = PBXGroup;
 			children = (
+				863450CC1E516A5B00F242DA /* MCViewport */,
+				863450D91E516A7C00F242DA /* Classes */,
 				863450B91E51685F00F242DA /* MCBackdrop */,
 				863450B81E51685F00F242DA /* Products */,
 			);
@@ -62,6 +86,31 @@
 				863450C61E51685F00F242DA /* Info.plist */,
 			);
 			path = MCBackdrop;
+			sourceTree = "<group>";
+		};
+		863450CC1E516A5B00F242DA /* MCViewport */ = {
+			isa = PBXGroup;
+			children = (
+				863450CD1E516A6700F242DA /* MCRecycler.swift */,
+				863450CE1E516A6700F242DA /* MCViewport.swift */,
+				863450CF1E516A6700F242DA /* MCViewportItem.swift */,
+				863450D01E516A6700F242DA /* MCViewportItem+Distances.swift */,
+				863450D11E516A6700F242DA /* MCViewportItem+MovementConstraints.swift */,
+				863450D21E516A6700F242DA /* MCViewportWithScrollView.swift */,
+			);
+			name = MCViewport;
+			sourceTree = "<group>";
+		};
+		863450D91E516A7C00F242DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				863450DA1E516AA400F242DA /* MCBackdrop.swift */,
+				863450DB1E516AA400F242DA /* ImageBackdrop.swift */,
+				863450DD1E516AA400F242DA /* TransitionImageBackdrop.swift */,
+				863450DE1E516AA400F242DA /* VideoBackdrop.swift */,
+				863450DC1E516AA400F242DA /* RepeatingVideoBackdrop.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +186,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863450DF1E516AA400F242DA /* MCBackdrop.swift in Sources */,
+				863450D71E516A6700F242DA /* MCViewportItem+MovementConstraints.swift in Sources */,
 				863450BD1E51685F00F242DA /* ViewController.swift in Sources */,
 				863450BB1E51685F00F242DA /* AppDelegate.swift in Sources */,
+				863450E21E516AA400F242DA /* TransitionImageBackdrop.swift in Sources */,
+				863450D31E516A6700F242DA /* MCRecycler.swift in Sources */,
+				863450D41E516A6700F242DA /* MCViewport.swift in Sources */,
+				863450D51E516A6700F242DA /* MCViewportItem.swift in Sources */,
+				863450E01E516AA400F242DA /* ImageBackdrop.swift in Sources */,
+				863450E31E516AA400F242DA /* VideoBackdrop.swift in Sources */,
+				863450E11E516AA400F242DA /* RepeatingVideoBackdrop.swift in Sources */,
+				863450D61E516A6700F242DA /* MCViewportItem+Distances.swift in Sources */,
+				863450D81E516A6700F242DA /* MCViewportWithScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +362,7 @@
 				863450CB1E51685F00F242DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
