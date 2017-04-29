@@ -20,6 +20,7 @@ extension MCBackdropView {
             super.init(frame: frame)
             
             addSubview(imageView)
+            imageView.contentMode = .scaleAspectFill
         }
         
         required init?(coder aDecoder: NSCoder) {
