@@ -45,8 +45,8 @@ extension MCBackdropView {
             
             guard let playerLayer = playerLayer else { return }
             playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+            playerLayer.frame = bounds
             imageView.layer.addSublayer(playerLayer)
-            playerLayer.frame = imageView.layer.bounds
         }
         
         override func willAppear() {
