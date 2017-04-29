@@ -14,11 +14,11 @@ extension MCBackdropView {
     class RepeatingVideoBackdrop: MCBackdropView {
         var player: AVQueuePlayer?
         var playerLayer: AVPlayerLayer?
-        let imageView: UIImageView
+        let imageView = UIImageView()
         
         override init(frame: CGRect) {
-            imageView = UIImageView()
             super.init(frame: frame)
+
             addSubview(imageView)
         }
         
@@ -27,14 +27,17 @@ extension MCBackdropView {
         }
         
         var image: UIImage? {
-            didSet {
-                imageView.image = image
+            set {
+                imageView.image = newValue
+            }
+            get {
+                return imageView.image
             }
         }
         
         var video: AVAsset?
         
-        override func willAppear() {
+        func setupVideo() {
             player = AVQueuePlayer()
             playerLayer = AVPlayerLayer(player: player)
             
@@ -51,7 +54,18 @@ extension MCBackdropView {
             startObserving()
         }
         
+        override func willAppear() {
+            // Only set up video at this stage if there is no image
+            if image == nil {
+                setupVideo()
+            }
+        }
+        
         override func hasStopped() {
+            // Player might have been setup in willAppear; check for it
+            if player == nil {
+                setupVideo()
+            }
             player?.play()
         }
         

@@ -14,11 +14,11 @@ extension MCBackdropView {
     class VideoBackdrop: MCBackdropView {
         var player: AVPlayer?
         var playerLayer: AVPlayerLayer?
-        let imageView: UIImageView
+        let imageView = UIImageView()
         
         override init(frame: CGRect) {
-            imageView = UIImageView()
             super.init(frame: frame)
+            
             addSubview(imageView)
         }
         
@@ -27,16 +27,17 @@ extension MCBackdropView {
         }
         
         var image: UIImage? {
-            didSet {
-                imageView.image = image
+            set {
+                imageView.image = newValue
+            }
+            get {
+                return imageView.image
             }
         }
         
         var video: AVAsset?
         
-        override func willAppear() {
-            super.willAppear()
-            
+        func setupVideo() {
             guard let video = video else { return }
             player = AVPlayer(playerItem: AVPlayerItem(asset: video))
             player?.actionAtItemEnd = .pause
@@ -48,7 +49,18 @@ extension MCBackdropView {
             playerLayer.frame = imageView.layer.bounds
         }
         
+        override func willAppear() {
+            // Only set up video at this stage if there is no image
+            if image == nil {
+                setupVideo()
+            }
+        }
+        
         override func hasStopped() {
+            // Player might have been setup in willAppear; check for it
+            if player == nil {
+                setupVideo()
+            }
             player?.play()
         }
         
