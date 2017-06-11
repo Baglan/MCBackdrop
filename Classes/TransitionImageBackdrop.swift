@@ -22,9 +22,15 @@ extension MCBackdropView {
                     oldImageView.image = oldImage
                     oldImageView.alpha = 1
                     
-                    UIView.animate(withDuration: transitionDuration, delay: 0, options: UIViewAnimationOptions.beginFromCurrentState, animations: {
-                        self.oldImageView.alpha = 0
-                    }, completion: nil)
+                    UIView.animate(
+                        withDuration: transitionDuration,
+                        delay: 0,
+                        options: UIViewAnimationOptions(rawValue: 0),
+                        animations: { [unowned self] _ in
+                            self.oldImageView.alpha = 0
+                        },
+                        completion: nil
+                    )
                 }
                 
                 currentImageView.image = image
