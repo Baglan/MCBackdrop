@@ -94,6 +94,9 @@ class MCBackdropItem: MCViewport.ViewItem {
                 view.addSubview(backdrop)
             }
             
+            backdrop.layoutIfNeeded()
+            backdrop.updateConstraintsIfNeeded()
+            
             backdrop.willAppear()
             backdrop.isHidden = false
         }
