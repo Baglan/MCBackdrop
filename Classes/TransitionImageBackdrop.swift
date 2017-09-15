@@ -26,7 +26,7 @@ extension MCBackdropView {
                         withDuration: transitionDuration,
                         delay: 0,
                         options: UIViewAnimationOptions(rawValue: 0),
-                        animations: { [unowned self] _ in
+                        animations: { [unowned self] in
                             self.oldImageView.alpha = 0
                         },
                         completion: nil
